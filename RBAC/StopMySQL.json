@@ -1,0 +1,23 @@
+{
+    "id": "<SUBSCRIPTION_ID>",
+    "properties": {
+        "roleName": "Stop-MySQL",
+        "description": "MySQLデータベースサーバを止めるロール",
+        "assignableScopes": [
+            "<RESOURCE_GROUP_ID>"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.DBforMySQL/flexibleServers/read",
+                    "Microsoft.DBforMySQL/flexibleServers/stop/action",
+                    "Microsoft.DBforMySQL/servers/stop/action",
+                    "Microsoft.DBforMySQL/servers/read"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}

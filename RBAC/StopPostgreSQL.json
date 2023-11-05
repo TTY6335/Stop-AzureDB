@@ -1,0 +1,23 @@
+{
+    "id": "<SUBSCRIPTION_ID>",
+    "properties": {
+        "roleName": "Stop-PostgreSQL",
+        "description": "PostgreSQLデータベースサーバを止めるロール",
+        "assignableScopes": [
+            "<RESOURCE_GROUP_ID>"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.DBforPostgreSQL/flexibleServers/read",
+                    "Microsoft.DBforPostgreSQL/flexibleServers/stop/action",
+                    "Microsoft.DBforPostgreSQL/servers/stop/action",
+                    "Microsoft.DBforPostgreSQL/servers/read"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}
